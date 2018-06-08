@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CrystalCollector Game</title>
+    <title>Crystal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />   
-
-    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    
     <style>
         #main-contents {
             background-image: url(assets/images/wormz.png);
@@ -31,7 +30,7 @@
         <div class="row">
             <div class="col-sm-7" id="instruction">
                 <strong><p>You will be given a random number at the start of the game.</p></strong>
-               <strong> <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p> </strong> 
+                <strong> <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p> </strong> 
                 <strong><p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p> </strong>
                 <strong><p>The value of each crystal is hidden from you until you click on it. </p> </strong>
                 <strong><p>Each time when the game starts, the game will change the values of each crystal.</p></strong>
@@ -40,21 +39,21 @@
         <br>
         <div class="row">
             <div class="col-sm-4" id="targetNum">
-               39 
+               39
             </div>
             <div class="col-sm-2" id="WinLoss">
-                <span>wins:</span>
+                <span id="idWin">wins:</span>
                 <br><br>
-                <span>Losses:</span>
+                <span id="idLose">Losses:</span>
             </div>            
         </div>
         <br>
         <div class="row">
             <div class="col-sm-12">
-                <img src="assets/images/red_crystal.png" alt="Red Crystal">
-                <img src="assets/images/blue_crystal.png" alt="Blue Crystal">
-                <img src="assets/images/yellow_crystal.png" alt="Yellow Crystal">
-                <img src="assets/images/green_crystal.png" alt="Green Crystal">
+                <img class="crys-one" src="assets/images/red_crystal.png" alt="Red Crystal">
+                <img class="crys-two" src="assets/images/blue_crystal.png" alt="Blue Crystal">
+                <img class="crys-three" src="assets/images/yellow_crystal.png" alt="Yellow Crystal">
+                <img class="crys-four" src="assets/images/green_crystal.png" alt="Green Crystal">
             </div>
         </div>
         <br>
@@ -69,11 +68,10 @@
                 0
             </div>
         </div>
-     
-       
-
-
 
     </div>
+    <!-- Make sure these two links are placed together in the end of "body" in order to use an external .js file.-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script> 
 </body>
 </html>
