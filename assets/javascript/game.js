@@ -45,7 +45,7 @@ $( document ).ready(function(){
     $("#idLose").html("Losses: " + losses);
     setTimeout(reset, 1500);
   }
-  //set the click functions for crystals
+  //set the click functions to calculate userTotal
     $(".crys-one").on ("click", function(){
       userTotal = userTotal + crysNum1;
       console.log("New userTotal= " + userTotal);
